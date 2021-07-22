@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+    button 
+    {
+        width:250px;
+        background-color: rgb(122, 122, 122);
+        border: none;
+        color:rgb(255, 255, 255);
+        padding: 20px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 10px;
+        cursor: pointer;
+        outline : none;
+    }     
+    body
+    {
+        background-image: url('연기.jpg');
+    }
+    </style>
+    <script LANGUAGE="javaScript">
+    function winOpen()
+    {
+        myWin=window.open("로그인 화면.html","new","width=300,height=250");
+    }
+    function winOpen1()
+    {
+        myWin=window.open("회원가입 화면.html","new","width=300,height=300");
+    }
+         
+</script>
+</head>
+<body topmargin="20">
+    <p align="center">
+        <form method="post" action=""><center>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1><b>Do test</b></h1>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <button type="button" onclick="winOpen()"><b>login</b></button>
+            <button type="button" onclick="winOpen1()"><b>join</b></button>  
+        </form></center>
+    </p>
+</body>
+</html>

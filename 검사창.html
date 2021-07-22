@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    button
+    {
+        width: 200px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color:rgb(255, 255, 255);
+        padding: 15px 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 30px;
+        cursor: pointer;
+    }
+    body
+    {
+        background-image: url('연기.jpg');
+    }
+    </style>
+    <script LANGUAGE="javaScript">
+        function winOpen()
+        {
+            myWin=window.open("결과창.html");
+        }
+        function winOpen1()
+        {
+            myWin=window.open("결과창1.html");
+        }
+        function winOpen2()
+        {
+            myWin=window.open("결과창2.html");
+        }
+        function winOpen3()
+        {
+            myWin=window.open("결과창3.html");
+        }
+        function winOpen4()
+        {
+            myWin=window.open("결과창4.html");
+        }
+        function winOpen5()
+        {
+            myWin=window.open("결과창5.html");
+        }
+             
+    </script>
+    <script language = "javascript">
+
+    function output(form) 
+    {
+        for(var i = 0; i < form.click.length; i++) 
+        {
+            if(form.click[i].checked) 
+            {     
+              if(i == 1)
+              {
+                  onclick="winOpen1()"
+              }
+              else if(i == 2)
+              {
+                  onclick="winOpen2()"
+              }
+              else if(i == 3)
+              {
+                  onclick="winOpen3()"
+              }
+              else if(i == 4)
+              {
+                  onclick="winOpen4()"
+              }
+              else if(i == 5)
+              {
+                  onclick="winOpen5()"
+              }
+              alert(output);
+              break; 
+        }
+           
+        }
+      
+        if(i == form.click.length) 
+        {
+            alert("선택하세요!");      
+            return;
+        }
+      
+        }  
+      </script>
+      
+      <form name = "select_form"><center>
+      
+        <h2>가장 자신과 가까운 보기를 선택하세요.</h2><br><br><br>
+
+        <h3>당신은 게임을 좋아하나요?</h3>
+        <input type = "radio" name = "click" value = "1"><br><br><br>
+
+        <h3>당신은 여행을 좋아하나요?</h3>
+        <input type = "radio" name = "click" value = "2"><br><br><br>
+
+        <h3>당신은 먹는것을 좋아하나요?</h3>
+        <input type = "radio" name = "click" value = "3"><br><br><br>
+
+        <h3>당신은 소리를 자주 지르시나요?</h3>
+        <input type = "radio" name = "click" value = "4"><br><br><br>
+
+        <h3>당신은 애니매이션을 좋아하시나요?</h3>
+        <input type = "radio" name = "click" value = "5"><br><br><br>
+
+        <h3>당신은 책읽는 것과 공부를 좋아하시나요?</h3>
+        <input type = "radio" name = "click" value = "6"><br><br><br>
+         
+        
+        <button type="button" onclick="winOpen('결과창.html')"><b>결과보기</b></button>
+      
+      </form>
+    </center>
+       
+</head>
+<body>
+    
+</body>
+</html>
